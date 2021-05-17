@@ -312,20 +312,6 @@ img {
   display: inline-flex;
 }
 
-.social-icons__svg {
-  fill: var(--white);
-}
-
-.social-icons__link {
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color var(--transition-duration-tfunction);
-  transition: background-color var(--transition-duration-tfunction);
-}
-
-.social-icons__link:hover, .social-icons__link:focus {
-  background-color: var(--accent);
-}
-
 .social-icons__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +351,20 @@ img {
   transition: fill var(--transition-duration-tfunction);
 }
 
+.social-icons__svg--inverse {
+  fill: var(--white);
+}
+
+.social-icons__link--inverse {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color var(--transition-duration-tfunction);
+  transition: background-color var(--transition-duration-tfunction);
+}
+
+.social-icons__link-inverse:hover, .social-icons__link-inverse:focus {
+  background-color: var(--accent);
+}
+
 .form-subscribe {
   padding-top: 72px;
   padding-left: 93px;
@@ -374,6 +374,8 @@ img {
 .form-subscribe__title {
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
@@ -1064,6 +1066,8 @@ textarea::placeholder {
 .page-footer__title {
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
